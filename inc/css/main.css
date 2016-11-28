@@ -1,0 +1,45 @@
+#ad_box {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+
+#ad_box a {
+    display: block;
+}
+
+#ad_box img {
+    display: block;
+}
+
+#ad_box .ad-standard {
+    text-align: right;
+}
+
+#ad_box .ad-premium {
+    text-align: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+
+@media screen and (max-width: 1000px) {
+    #ad_box {
+        clear: both;
+        margin: 16px 0 0;
+        position: static;
+    }
+
+    #ad_box img {
+        display: inline-block;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #ad_box .ad-standard {
+        text-align: center;
+    }
+}
